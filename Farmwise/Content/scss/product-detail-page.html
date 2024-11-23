@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail - Biomel Milk</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your stylesheet -->
+</head>
+<body>
+
+    <!-- Header and navigation (optional) -->
+    <header>
+        <h1>Product Detail</h1>
+    </header>
+
+    <main>
+        <div class="product-detail">
+            <h2 id="product-name">Product Name</h2>
+            <p id="product-description">Product description will go here.</p>
+            <!-- Add more product details here as needed -->
+        </div>
+    </main>
+
+    <!-- JavaScript to handle dynamic product info -->
+    <script>
+    // Get query parameter from the URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const product = urlParams.get('product');
+
+    // Based on the 'product' value, display the relevant details
+    if (product === 'biomel-milk') {
+        document.getElementById('product-name').textContent = 'Biomel Milk';
+        document.getElementById('product-description').textContent = 'Biomel milk replacer for calves is designed to mimic the nutritional profile of whole cow\'s milk, providing essential nutrients for growth and development. It typically contains proteins, fats, vitamins, and minerals tailored to meet the specific needs of calves.';
+    }
+    // You can add more `else if` conditions for other products if needed
+    </script>
+
+</body>
+</html>
