@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail - Biomel Milk</title>
+    <style>
+        .product-detail {
+    display: flex; /* Enables horizontal layout */
+    align-items: flex-start; /* Aligns the items to the top of the container */
+    gap: 20px; /* Space between the image and the text */
+}
+
+.product-image img {
+    max-width: 400px; /* Limit the size of the image */
+    height: auto;
+}
+
+.product-description {
+    flex: 1; /* Makes the text section take the remaining space */
+    max-width: 600px; /* Optional: limits the width of the text for better readability */
+}
+
+h2#product-name {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- Header and navigation (optional) -->
+    <header>
+        <h1>Product Detail</h1>
+    </header>
+
+    <main>
+        <div class="product-detail">
+            <div class="product-image">
+                <!-- Image on the left -->
+                <img class="img-fluid" src="img/foodCow.jpg" alt="Biomel Milk replacer for calves" />
+            </div>
+            <div class="product-description">
+                <!-- Text on the right -->
+                <h2 id="product-name">Biomel Milk</h2>
+                <p>
+                    Biomel milk replacer for calves is designed to mimic the nutritional profile of whole cow's milk, providing essential nutrients for growth and development. It typically contains proteins, fats, vitamins, and minerals tailored to meet the specific needs of calves. The main components include:
+                </p>
+                <ul>
+                    <li><strong>Proteins</strong>: Sourced from whey or other milk proteins, they support muscle growth and overall health.</li>
+                    <li><strong>Fats</strong>: Provide energy and aid in the absorption of fat-soluble vitamins.</li>
+                    <li><strong>Vitamins and Minerals</strong>: Essential for immune function, bone development, and overall metabolic processes.</li>
+                </ul>
+                <p>
+                    Biomel milk replacers are formulated to be easily digestible, promoting better nutrient absorption. They also help reduce the risk of digestive disorders commonly seen in calves fed with inadequate milk substitutes. Proper mixing and feeding protocols are crucial for optimal results.
+                </p>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+
+<!-- JavaScript to handle dynamic product info -->
+<script>
+    // Get query parameter from the URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const product = urlParams.get('product');
+
+    // Based on the 'product' value, display the relevant details
+    if (product === 'biomel-milk') {
+        document.getElementById('product-name').textContent = 'Biomel Milk';
+        document.getElementById('product-description').textContent = 'Biomel milk replacer for calves is designed to mimic the nutritional profile of whole cow\'s milk, providing essential nutrients for growth and development. It typically contains proteins, fats, vitamins, and minerals tailored to meet the specific needs of calves. The main components include:\n\n1. Proteins: Sourced from whey or other milk proteins, they support muscle growth and overall health.\n2. Fats: Provide energy and aid in the absorption of fat-soluble vitamins.\n3. Vitamins and Minerals: Essential for immune function, bone development, and overall metabolic processes.\n\nBiomel milk replacers are formulated to be easily digestible, promoting better nutrient absorption. They also help reduce the risk of digestive disorders commonly seen in calves fed with inadequate milk substitutes. Proper mixing and feeding protocols are crucial for optimal results.';
+    }
+</script>
+
+</body>
+</html>
+

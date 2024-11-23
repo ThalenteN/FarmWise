@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail - Biomel Milk</title>
+    <style>
+        .product-detail {
+            display: flex; /* Enables horizontal layout */
+            align-items: flex-start; /* Aligns the items to the top of the container */
+            gap: 20px; /* Space between the image and the text */
+            margin-bottom: 30px; /* Added spacing between sections */
+        }
+
+        .product-image img {
+            max-width: 400px; /* Limit the size of the image */
+            height: auto;
+        }
+
+        .product-description {
+            flex: 1; /* Makes the text section take the remaining space */
+            max-width: 600px; /* Optional: limits the width of the text for better readability */
+        }
+
+        h2#product-name {
+            margin-top: 0;
+            font-size: 24px;
+        }
+
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+            ul li {
+                margin-bottom: 8px;
+            }
+
+        .back-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+            .back-button:hover {
+                background-color: #0056b3;
+            }
+
+        .hormonal-medicines {
+            margin-top: 30px; /* Spacing between product description and new section */
+        }
+
+            .hormonal-medicines h3 {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+
+            .hormonal-medicines ul {
+                padding-left: 30px; /* Indentation for list items */
+            }
+
+                .hormonal-medicines ul li {
+                    margin-bottom: 10px;
+                }
+    </style>
+</head>
+<body>
+
+    <!-- Header and navigation (optional) -->
+    <header>
+        <h1>Product Detail</h1>
+    </header>
+
+    <main>
+        <div class="product-detail">
+            <div class="product-image">
+                <!-- Image on the left -->
+                <img class="img-fluid" src="img/foodCow.jpg" alt="Biomel Milk replacer for calves" />
+            </div>
+            <div class="product-description">
+                <!-- Text on the right -->
+                <h2 id="product-name">Biomel Milk</h2>
+                <p>
+                    Biomel milk replacer for calves is designed to mimic the nutritional profile of whole cow's milk, providing essential nutrients for growth and development. It typically contains proteins, fats, vitamins, and minerals tailored to meet the specific needs of calves. The main components include:
+                </p>
+                <ul>
+                    <li><strong>Proteins</strong>: Sourced from whey or other milk proteins, they support muscle growth and overall health.</li>
+                    <li><strong>Fats</strong>: Provide energy and aid in the absorption of fat-soluble vitamins.</li>
+                    <li><strong>Vitamins and Minerals</strong>: Essential for immune function, bone development, and overall metabolic processes.</li>
+                </ul>
+                <p>
+                    Biomel milk replacers are formulated to be easily digestible, promoting better nutrient absorption. They also help reduce the risk of digestive disorders commonly seen in calves fed with inadequate milk substitutes. Proper mixing and feeding protocols are crucial for optimal results.
+                </p>
+
+
+            </div>
+        </div>
+
+        <!-- New Section: Hormonal Medicines -->
+        <div class="hormonal-medicines">
+            <h3>1. Hormonal Medicines</h3>
+            <p>These are used to regulate the cow's reproductive cycle and treat fertility issues.</p>
+
+            <h4>For Heat Synchronization</h4>
+            <ul>
+                <li><strong>Prostaglandins (PGF2α)</strong>: Used to induce estrus (heat) by causing the regression of the corpus luteum.</li>
+                <li><em>Examples: Lutalyse, Estrumate, Cyclix</em></li>
+            </ul>
+
+            <h4>For Ovulation Induction</h4>
+            <ul>
+                <li><strong>Gonadotropin-Releasing Hormone (GnRH)</strong>: Triggers ovulation by stimulating the release of luteinizing hormone (LH).</li>
+                <li><em>Examples: Cystorelin, Fertagyl, OvuMate</em></li>
+            </ul>
+
+            <h4>For Superovulation</h4>
+            <ul>
+                <li><strong>Follicle-Stimulating Hormone (FSH)</strong>: Used in embryo transfer programs to stimulate multiple egg releases.</li>
+                <li><em>Examples: Folltropin, Pluset</em></li>
+            </ul>
+
+            <h4>For Pregnancy Maintenance</h4>
+            <ul>
+                <li><strong>Progesterone</strong>: Helps sustain pregnancy and synchronize cycles when combined with prostaglandins.</li>
+                <li><em>Examples: CIDR (Controlled Internal Drug Release) devices</em></li>
+            </ul>
+            <!-- Back button -->
+            <button class="back-button" onclick="window.location.href='service.html';">Back to Service</button>
+        </div>
+
+    </main>
+
+    <!-- JavaScript to handle dynamic product info -->
+    <script>
+        // Get query parameter from the URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const product = urlParams.get('product');
+
+        // Based on the 'product' value, display the relevant details
+        if (product === 'biomel-milk') {
+            document.getElementById('product-name').textContent = 'Biomel Milk';
+            document.getElementById('product-description').innerHTML = `
+                        Biomel milk replacer for calves is designed to mimic the nutritional profile of whole cow's milk, providing essential nutrients for growth and development. It typically contains proteins, fats, vitamins, and minerals tailored to meet the specific needs of calves. The main components include:
+                        <ul>
+                            <li><strong>Proteins</strong>: Sourced from whey or other milk proteins, they support muscle growth and overall health.</li>
+                            <li><strong>Fats</strong>: Provide energy and aid in the absorption of fat-soluble vitamins.</li>
+                            <li><strong>Vitamins and Minerals</strong>: Essential for immune function, bone development, and overall metabolic processes.</li>
+                        </ul>
+                        Biomel milk replacers are formulated to be easily digestible, promoting better nutrient absorption. They also help reduce the risk of digestive disorders commonly seen in calves fed with inadequate milk substitutes. Proper mixing and feeding protocols are crucial for optimal results.
+                    `;
+        }
+    </script>
+
+</body>
+</html>

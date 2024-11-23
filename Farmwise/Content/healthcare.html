@@ -1,0 +1,273 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare for Livestock</title>
+    <style>
+        .livestock-healthcare {
+            display: flex; /* Enables horizontal layout */
+            align-items: flex-start; /* Aligns the items to the top of the container */
+            gap: 20px; /* Space between the image and the text */
+            margin-bottom: 30px; /* Added spacing between sections */
+        }
+
+        .livestock-image img {
+            max-width: 400px; /* Limit the size of the image */
+            height: auto;
+        }
+
+        .livestock-description {
+            flex: 1; /* Makes the text section take the remaining space */
+            max-width: 600px; /* Optional: limits the width of the text for better readability */
+        }
+
+        h2#livestock-name {
+            margin-top: 0;
+            font-size: 24px;
+        }
+
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+            ul li {
+                margin-bottom: 8px;
+            }
+
+        .back-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+            .back-button:hover {
+                background-color: #0056b3;
+            }
+
+        .healthcare-sections {
+            margin-top: 30px;
+        }
+
+            .healthcare-sections h3 {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+
+            .healthcare-sections ul {
+                padding-left: 30px;
+            }
+
+                .healthcare-sections ul li {
+                    margin-bottom: 10px;
+                }
+    </style>
+</head>
+<body>
+
+    <!-- Header and navigation (optional) -->
+    <header>
+        <h1>Livestock Healthcare</h1>
+    </header>
+
+    <main>
+        <div class="livestock-healthcare">
+            <div class="livestock-image">
+                <!-- Image on the left -->
+                <img class="img-fluid" src="img/Chicken.jpg" alt="Livestock Healthcare" />
+            </div>
+            <div class="livestock-description">
+                <!-- Text on the right -->
+                <h2 id="livestock-name">Healthcare for Livestock</h2>
+                <p>
+                    Proper healthcare practices are essential for ensuring the health and productivity of various types of livestock. The healthcare needs of animals such as cattle, sheep, goats, pigs, poultry, and horses vary, and farmers need to adopt specific measures to meet these needs.
+                </p>
+                <p>
+                    This page provides an overview of the common healthcare practices for different livestock, from disease prevention and nutrition to reproductive health and veterinary care.
+                </p>
+            </div>
+        </div>
+
+        <!-- Healthcare Information -->
+        <div class="healthcare-sections">
+            <h3>Cattle (Beef and Dairy)</h3>
+            <ul>
+                <li><strong>Diseases:</strong> Brucellosis, Foot-and-Mouth Disease, Bovine Tuberculosis.</li>
+                <li><strong>Parasite Control:</strong> Deworming and pest management for internal and external parasites.</li>
+                <li><strong>Nutrition:</strong> High-fiber, protein-rich diet with added calcium for dairy cows.</li>
+                <li><strong>Reproductive Health:</strong> Timely breeding and monitoring for mastitis in dairy cows.</li>
+            </ul>
+
+            <h3>Sheep and Goats</h3>
+            <ul>
+                <li><strong>Diseases:</strong> Foot Rot, Blue Tongue, Scrapie.</li>
+                <li><strong>Parasite Control:</strong> Deworming for barber pole worm and external parasites like lice.</li>
+                <li><strong>Nutrition:</strong> High-fiber diet with supplemental grains during lambing or kidding.</li>
+                <li><strong>Vaccination:</strong> Vaccines for clostridial diseases like tetanus.</li>
+            </ul>
+
+            <h3>Pigs</h3>
+            <ul>
+                <li><strong>Diseases:</strong> African Swine Fever, Swine Flu, PRRS (Porcine Reproductive and Respiratory Syndrome).</li>
+                <li><strong>Parasite Control:</strong> Deworming for roundworms and tapeworms.</li>
+                <li><strong>Nutrition:</strong> High-protein, energy-rich diet to support growth and fertility.</li>
+                <li><strong>Reproductive Health:</strong> Monitoring for uterine infections and ensuring fertility.</li>
+            </ul>
+
+            <h3>Poultry (Chickens, Turkeys, Ducks)</h3>
+            <ul>
+                <li><strong>Diseases:</strong> Avian Influenza, Newcastle Disease, Marek’s Disease.</li>
+                <li><strong>Parasite Control:</strong> Monitoring and treating external parasites like mites, lice, and ticks.</li>
+                <li><strong>Nutrition:</strong> Balanced diet with calcium for laying hens and growth feed for broilers.</li>
+                <li><strong>Water Management:</strong> Clean water to prevent digestive and disease issues.</li>
+            </ul>
+
+            <h3>Horses</h3>
+            <ul>
+                <li><strong>Diseases:</strong> Equine Influenza, Strangles, Colic.</li>
+                <li><strong>Parasite Control:</strong> Deworming for intestinal parasites like strongyles.</li>
+                <li><strong>Nutrition:</strong> Balanced hay, grass, and grain diet with access to fresh water.</li>
+                <li><strong>Exercise & Hoof Care:</strong> Regular exercise and hoof trimming for health and performance.</li>
+            </ul>
+
+            <h3>Other Livestock (Buffalo, Camel, Llamas)</h3>
+            <ul>
+                <li><strong>Diseases:</strong> Foot-and-Mouth Disease (Buffalo), Trypanosomiasis (Camels).</li>
+                <li><strong>Parasite Control:</strong> Internal and external parasite management specific to each species.</li>
+                <li><strong>Nutrition:</strong> Species-specific feeding programs, especially for animals in arid climates like camels.</li>
+                <li><strong>Reproductive Health:</strong> Breeding programs and care for young animals.</li>
+            </ul>
+        </div>
+
+       
+       
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Healthcare for Cows</title>
+            <style>
+                .cow-healthcare {
+                    display: flex; /* Enables horizontal layout */
+                    align-items: flex-start; /* Aligns the items to the top of the container */
+                    gap: 20px; /* Space between the image and the text */
+                    margin-bottom: 30px; /* Added spacing between sections */
+                }
+
+                .cow-image img {
+                    max-width: 400px; /* Limit the size of the image */
+                    height: auto;
+                }
+
+                .cow-description {
+                    flex: 1; /* Makes the text section take the remaining space */
+                    max-width: 600px; /* Optional: limits the width of the text for better readability */
+                }
+
+                h2#cow-name {
+                    margin-top: 0;
+                    font-size: 24px;
+                }
+
+                ul {
+                    margin: 10px 0;
+                    padding-left: 20px;
+                }
+
+                    ul li {
+                        margin-bottom: 8px;
+                    }
+
+                .back-button {
+                    margin-top: 20px;
+                    padding: 10px 20px;
+                    background-color: #007bff;
+                    color: white;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    text-align: center;
+                }
+
+                    .back-button:hover {
+                        background-color: #0056b3;
+                    }
+
+                .healthcare-sections {
+                    margin-top: 30px;
+                }
+
+                    .healthcare-sections h3 {
+                        font-size: 20px;
+                        margin-bottom: 10px;
+                    }
+
+                    .healthcare-sections ul {
+                        padding-left: 30px;
+                    }
+
+                        .healthcare-sections ul li {
+                            margin-bottom: 10px;
+                        }
+            </style>
+        </head>
+        <body>
+
+            <!-- Header and navigation (optional) -->
+            <header>
+                <h1>Cow Healthcare</h1>
+            </header>
+
+            <main>
+                <div class="cow-healthcare">
+                    <div class="cow-image">
+                        <!-- Image on the left -->
+                        <img class="img-fluid" src="img/product-1.jpg" alt="Cow Healthcare" />
+                    </div>
+                   
+                </div>
+
+                <!-- Healthcare Information -->
+                <div class="healthcare-sections">
+                    <h3>1. Common Diseases in Cows</h3>
+                    <ul>
+                        <li><strong>Foot-and-Mouth Disease:</strong> A contagious viral disease causing fever, sores, and blisters. Prevention through vaccination is critical.</li>
+                        <li><strong>Mastitis:</strong> An infection of the udder causing swelling and reduced milk production. Regular hygiene and timely antibiotic treatment are essential.</li>
+                        <li><strong>Brucellosis:</strong> A bacterial infection that can cause abortion in cows. Prevent through vaccination and controlling animal movement.</li>
+                        <li><strong>Bovine Tuberculosis:</strong> Affects the respiratory system causing coughing and weight loss. Regular testing and early diagnosis are important.</li>
+                        <li><strong>Bovine Respiratory Disease (BRD):</strong> Caused by a combination of viral and bacterial infections, especially in calves. Prevention includes good ventilation and vaccination.</li>
+                    </ul>
+
+                    <h3>2. Health Management Practices for Cows</h3>
+                    <ul>
+                        <li><strong>Vaccination:</strong> Vaccination programs for diseases like foot-and-mouth disease, clostridial diseases (tetanus, blackleg), and brucellosis.</li>
+                        <li><strong>Parasite Control:</strong> Regular deworming and pest control measures to manage internal and external parasites like ticks and flies.</li>
+                        <li><strong>Nutrition:</strong> Providing a balanced diet with high-quality forage (grass, hay) and supplemented grains to support milk production and overall health.</li>
+                        <li><strong>Hoof Care:</strong> Regular hoof trimming to prevent hoof rot and lameness, which can severely impact cow mobility and health.</li>
+                        <li><strong>Reproductive Health:</strong> Monitoring estrus and following good breeding practices to maintain herd health and ensure healthy calves.</li>
+                    </ul>
+
+                    <h3>3. General Care and Monitoring</h3>
+                    <ul>
+                        <li><strong>Hydration:</strong> Ensure fresh, clean water is always available, especially for dairy cows that need large amounts of water for milk production.</li>
+                        <li><strong>Health Monitoring:</strong> Regularly monitor cows for signs of illness, such as changes in appetite, behavior, or temperature. Early detection is key to preventing larger outbreaks or complications.</li>
+                    </ul>
+                </div>
+
+                <!-- Back button -->
+                <button class="back-button" onclick="window.location.href='service.html';">Back to Services</button>
+
+        </body>
+    </html>
+
+    </main>
+
+</body>
+</html>
